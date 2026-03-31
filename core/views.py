@@ -75,3 +75,12 @@ def delete_students(request,pk):
     return Response({"Message" : "Successfully Deleted!"},status=status.HTTP_202_ACCEPTED)
 
 
+
+'''
+Status Codes--------------------------
+status.HTTP_200_OK      # success GET
+status.HTTP_201_CREATED # new data created
+status.HTTP_400_BAD_REQUEST # validation error
+status.HTTP_404_NOT_FOUND # wrong id
+status.HTTP_202_ACCEPTED # delete success
+'''
