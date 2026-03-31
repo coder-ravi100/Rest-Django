@@ -11,7 +11,7 @@ from .serializers import StudentSerializer
 def students(request):
     students = Student.objects.all() #Fetch All Records
     serializer = StudentSerializer(students, many = True) #many = True For List
-    return  Response(serializer.data, status=status.HTTP_200_OK)
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 # ...................
